@@ -102,9 +102,16 @@ ul{margin-left: 1rem;}
 li{padding-left: 0.5rem;}
 
 
-.text-lg{font-size: 4.5rem;}
+.text-lg{font-size: 3.5rem;}
 .text-xl{font-size:6rem;}
 .text-xxl{ font-size: 8.5rem;}
+.text-bold{ font-weight:bold;}
+
+.text-lato{
+    font-family: 'Lato', sans-serif; 
+    font-weight: 300;
+    color: #e37165;
+}
 
 .button {
     color: inherit;
@@ -116,7 +123,15 @@ li{padding-left: 0.5rem;}
 }
 
 /* Header & Footer */
-
+footer{
+    padding: 1rem;
+    color:rgb(145, 140, 140);
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+footer p{
+    font-size: 1rem;
+}
 /* Images & Background Images */
 .bg-image{
     background-size: cover;
@@ -146,4 +161,35 @@ li{padding-left: 0.5rem;}
 .shape-window{
     border-top-left-radius: 20rem;
     border-top-right-radius: 20rem;
+}
+
+/* Gridlex Media Queries 
+  @media (max-width: 36em)  Max 576px 	_xs-*
+  @media (max-width: 48em)  Max 768px 	_sm-*
+  @media (max-width: 64em)  Max 1024px 	_md-*
+  @media (max-width: 80em)  Max 1280px 	_lg-*
+*/
+
+/* Gridlex SM query - Max 768px - _sm-* */
+@media (max-width: 48em){
+    .text-xxl{
+        font-size: 6rem;}
+    .text-xl {font-size: 3.5rem;}
+    .sm-block {display: block;}
+    .text-center-sm { text-align: center; }
+}
+
+/* Gridlex XS query - Max 576px - _xs-* */
+@media (max-width: 36em){
+    .text-xl{font-size: 5rem;}
+    .text-lg{ font-size: 2.5rem;}
+    .text-xxl { font-size: 4.5rem; }
+
+}
+
+/* Gridlex XXS query - Max 400px - _xs-* */
+@media (max-width: 25em){
+    .text-xxl{
+        font-size: 2.5rem;
+    }
 }
