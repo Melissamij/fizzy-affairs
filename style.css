@@ -1,6 +1,6 @@
 /*  NOTES
 - fonts:
-    - Didot - Regular (headings)
+    - Cormorant- Garamond (headings)
     - Baskerville - Regular (small text)
     - Proxima Nova - Medium
 - Colors:
@@ -8,16 +8,19 @@
     - pink - FFA995
 - Map: [https://snazzymaps.com/style/115413/light-and-beige](https://snazzymaps.com/style/115413/light-and-beige)
 
+-Colors Fizzy 
+bg-color: beige #F5F1ED
+
 */
 
-
-
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-img {max-width: 100%;}
+img {
+  max-width: 100%;
+}
 
 /*  Temporary Styles 
 
@@ -35,132 +38,185 @@ body {
     border: 2px solid rgb(179, 84, 84);
 } */
 
-
 /* Re-usable Utiity Classes  */
 
-.tall-50 { min-height: 50vh; }
-.tall-60 { min-height: 60vh; }
-.tall-70 { min-height: 70vh; }
-.tall-80 { min-height: 80vh; }
-.tall-90 { min-height: 90vh; }
+.tall-50 {
+  min-height: 50vh;
+}
+.tall-60 {
+  min-height: 60vh;
+}
+.tall-70 {
+  min-height: 70vh;
+}
+.tall-80 {
+  min-height: 80vh;
+}
+.tall-90 {
+  min-height: 90vh;
+}
 
-
-.padded    { padding: 5%;}
+.padded {
+  padding: 5%;
+}
 .padded-1,
-.grid.padded-1  { padding: 1rem;  }
+.grid.padded-1 {
+  padding: 1rem;
+}
 .padded-2,
-.grid.padded-2  { padding: 2rem;  }
+.grid.padded-2 {
+  padding: 2rem;
+}
 
-.margin-b-0 { margin-bottom: 0; }
+.margin-b-0 {
+  margin-bottom: 0;
+}
 
-.bg-light {background-color: #F8F6F4;}
-.bg-featured { background-color: #018ca2;  }
-.bg-dark     { background-color: #24282B;  }
+.bg-light {
+  background-color: #f5f1ed;
+}
 
-.light-text { color: white; } 
-.text-featured {color:#f59186;}
+.light-text {
+  color: #f5f1ed;
+}
+.dark-text {
+  color: #1d1918;
+}
+.text-featured {
+  color: white;
+}
 
-.left   { text-align: left; }
-.center { text-align: center; }
-.right  { text-align: right; }
+.left {
+  text-align: left;
+}
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
+}
 
 /* General typography & universal styles  */
-body{
-    font-family: 'Baskervville', serif;
-    color: rgb(65,60,60);
+body {
+  font-family: "Baskervville", serif;
+  color: rgb(65, 60, 60);
 }
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Didot', serif;
-    font-weight: normal;
-    line-height: 1;
-    margin-bottom: 1rem;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cormorant Garamond", serif;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1;
+  margin-bottom: 1rem;
 }
-h1 { font-size: 3rem;}
-h2 {font-size: 2.5rem;}
-h3{font-size: 2rem;}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
 
-h1:last-child, 
-h2:last-child, 
-h3:last-child, 
-h4:last-child, 
-h5:last-child, 
-h6:last-child, 
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child,
 p:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
-p{
-    line-height: 1.4;
-    font-size: 1rem;
-    margin-bottom: 0.8rem;
+p {
+  line-height: 1.4;
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
 }
-a{
-    color:inherit;
-    text-decoration: none;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-ul{margin-left: 1rem;}
-li{padding-left: 0.5rem;}
+ul {
+  margin-left: 1rem;
+}
+li {
+  padding-left: 0.5rem;
+}
 
+.text-lg {
+  font-size: 3.5rem;
+}
+.text-xl {
+  font-size: 6rem;
+}
+.text-xxl {
+  font-size: 8.5rem;
+}
+.text-bold {
+  font-weight: bold;
+}
 
-.text-lg{font-size: 3.5rem;}
-.text-xl{font-size:6rem;}
-.text-xxl{ font-size: 8.5rem;}
-.text-bold{ font-weight:bold;}
-
-.text-lato{
-    font-family: 'Lato', sans-serif; 
-    font-weight: 300;
-    color: #e37165;
+.text-lato {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  color: #e37165;
 }
 
 .button {
-    color: inherit;
-    border: 1px solid #f59186;
-    border-radius: 2rem;
-    text-decoration: none;
-    padding: 0.5rem 1.5rem;
-    display: inline-block;
+  color: inherit;
+  border: 1px solid #f59186;
+  border-radius: 2rem;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  display: inline-block;
 }
 
 /* Header & Footer */
-footer{
-    padding: 1rem;
-    color:rgb(145, 140, 140);
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
+footer {
+  padding: 1rem;
+  color: rgb(145, 140, 140);
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
 }
-footer p{
-    font-size: 1rem;
+footer p {
+  font-size: 1rem;
 }
 /* Images & Background Images */
-.bg-image{
-    background-size: cover;
-    background-position: center;
-    background-image: url('/images/zen-studio-3.jpg');
+.bg-image {
+  background-size: cover;
+  background-position: center;
+  background-image: url("/images/zen-studio-3.jpg");
+  background: rgba(0, 0, 0, 0.34);
 }
-.bg-studio{
-    background-image: url('/images/zen-studio-3.jpg');
+.bg-studio {
+  background-image: url("/images/zen-studio-3.jpg");
 }
-.bg-stone{
-    background-image: url('/images/stone.png');
+.bg-stone {
+  background-image: url("/images/stone.png");
 }
-.bg-leaves{
-    background-image: url('/images/leaves-light.png');
+.bg-leaves {
+  background-image: url("/images/leaves-light.png");
 }
 
 .bg-yogi {
-    background-image: url('/images/zen-studio-yogi.jpg');
+  background-image: url("/images/zen-studio-yogi.jpg");
 }
-.bg-map{
-    background-image: url('/images/light-colored-map.png');
+.bg-map {
+  background-image: url("/images/light-colored-map.png");
 }
 .yogi {
-    border-radius: 15rem;
-    border-bottom-right-radius: 0;
+  border-radius: 15rem;
+  border-bottom-right-radius: 0;
 }
-.shape-window{
-    border-top-left-radius: 20rem;
-    border-top-right-radius: 20rem;
+.shape-window {
+  border-top-left-radius: 20rem;
+  border-top-right-radius: 20rem;
 }
 
 /* Gridlex Media Queries 
@@ -171,25 +227,37 @@ footer p{
 */
 
 /* Gridlex SM query - Max 768px - _sm-* */
-@media (max-width: 48em){
-    .text-xxl{
-        font-size: 6rem;}
-    .text-xl {font-size: 3.5rem;}
-    .sm-block {display: block;}
-    .text-center-sm { text-align: center; }
+@media (max-width: 48em) {
+  .text-xxl {
+    font-size: 6rem;
+  }
+  .text-xl {
+    font-size: 3.5rem;
+  }
+  .sm-block {
+    display: block;
+  }
+  .text-center-sm {
+    text-align: center;
+  }
 }
 
 /* Gridlex XS query - Max 576px - _xs-* */
-@media (max-width: 36em){
-    .text-xl{font-size: 5rem;}
-    .text-lg{ font-size: 2.5rem;}
-    .text-xxl { font-size: 4.5rem; }
-
+@media (max-width: 36em) {
+  .text-xl {
+    font-size: 5rem;
+  }
+  .text-lg {
+    font-size: 2.5rem;
+  }
+  .text-xxl {
+    font-size: 4.5rem;
+  }
 }
 
 /* Gridlex XXS query - Max 400px - _xs-* */
-@media (max-width: 25em){
-    .text-xxl{
-        font-size: 2.5rem;
-    }
+@media (max-width: 25em) {
+  .text-xxl {
+    font-size: 2.5rem;
+  }
 }
