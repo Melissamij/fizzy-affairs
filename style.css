@@ -59,6 +59,10 @@ body {
 .padded {
   padding: 5%;
 }
+.padded-side {
+  padding: 2rem 10%; /* Adjusting the left and right padding */
+}
+
 .padded-1,
 .grid.padded-1 {
   padding: 1rem;
@@ -81,9 +85,6 @@ body {
 }
 .dark-text {
   color: #1d1918;
-}
-.text-featured {
-  color: white;
 }
 
 .left {
@@ -148,7 +149,9 @@ ul {
 li {
   padding-left: 0.5rem;
 }
-
+.uppercase {
+  text-transform: uppercase;
+}
 .text-lg {
   font-size: 3.5rem;
 }
@@ -170,7 +173,7 @@ li {
 
 .button {
   color: inherit;
-  border: 1px solid #f59186;
+  border: 1px solid #1d1918;
   border-radius: 2rem;
   text-decoration: none;
   padding: 0.5rem 1.5rem;
@@ -188,14 +191,20 @@ footer p {
   font-size: 1rem;
 }
 /* Images & Background Images */
+.img {
+  max-width: 100%;
+}
 .bg-image {
   background-size: cover;
   background-position: center;
   background-image: url("/images/zen-studio-3.jpg");
-  background: rgba(0, 0, 0, 0.34);
 }
 .bg-studio {
   background-image: url("/images/zen-studio-3.jpg");
+}
+.bg-van {
+  background-image: url("/images/van.jpeg");
+  filter: brightness(66%);
 }
 .bg-stone {
   background-image: url("/images/stone.png");
@@ -217,6 +226,10 @@ footer p {
 .shape-window {
   border-top-left-radius: 20rem;
   border-top-right-radius: 20rem;
+}
+/*Darken image */
+.bg-dark-img {
+  filter: brightness(66%); /* 100% is normal — lower = darker */
 }
 
 /* Gridlex Media Queries 
