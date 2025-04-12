@@ -98,10 +98,16 @@ body {
 }
 
 /* General typography & universal styles  */
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Baskerville&display=swap');
+
+/* Your other CSS styles here */
 body {
-  font-family: "Baskervville", serif;
+  font-family: "Baskerville", serif;
   color: rgb(65, 60, 60);
 }
+
+
 h1,
 h2,
 h3,
@@ -171,6 +177,7 @@ li {
   color: #e37165;
 }
 
+/* Button for white background (default state) */
 .button {
   color: inherit;
   border: 1px solid #1d1918;
@@ -178,7 +185,33 @@ li {
   text-decoration: none;
   padding: 0.5rem 1.5rem;
   display: inline-block;
+  background-color: white; /* White background */
+  color: #1d1918; /* Black text */
 }
+
+/* Button on hover (beige background with black text) */
+.button:hover {
+  background-color: #F5F1ED; /* Beige background */
+  color: #1d1918; /* Black text */
+}
+
+/* Button for beige background (default state) */
+.button-beige {
+  color: #1d1918; /* Black text */
+  border: 1px solid #1d1918; /* Black border */
+  border-radius: 2rem;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  display: inline-block;
+  background-color: #F5F1ED; /* Beige background */
+}
+
+/* Button on hover (slightly darker beige background) */
+.button-beige:hover {
+  background-color: #e0d8cc; /* Darker beige */
+  color: #1d1918; /* Black text */
+}
+
 
 /* Header & Footer */
 footer {
