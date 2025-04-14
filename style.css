@@ -1,15 +1,13 @@
 /*  NOTES
-- fonts:
-    - Cormorant- Garamond (headings)
-    - Baskerville - Regular (small text)
-    - Proxima Nova - Medium
-- Colors:
-    - beige - F8F6F4
-    - pink - FFA995
-- Map: [https://snazzymaps.com/style/115413/light-and-beige](https://snazzymaps.com/style/115413/light-and-beige)
-
+- fonts familly 
+   header - Cormorant- Garamond 
+    paragraph - Baskerville - Regular 
+  
 -Colors Fizzy 
-bg-color: beige #F5F1ED
+beige #F5F1ED
+dark-beige: #e0d8cc
+dark-text: #1d1918;
+light-text: #f5f1ed;
 
 */
 
@@ -18,25 +16,36 @@ bg-color: beige #F5F1ED
   margin: 0;
   box-sizing: border-box;
 }
+
+[class*="grid"] {
+  margin: 0;
+}
+
 img {
   max-width: 100%;
 }
 
-/*  Temporary Styles 
+html {
+  scroll-behavior: smooth;
+}
+* ---------- Negative Space Utility Classes  ------------------ */
 
-* {
-    padding: 0.5rem;
-    border: 2px solid rgb(200,200,200);
-} 
-
- html, 
-body {
-    border: none; 
-} 
-
- h1,h2,h3,h4,h5,h6,p, a {
-    border: 2px solid rgb(179, 84, 84);
-} */
+.capped-width-wide {
+  max-width: 1600px;
+  margin: auto;
+}
+.capped-width {
+  max-width: 1200px;
+  margin: auto;
+}
+.capped-width-narrow {
+  max-width: 1000px;
+  margin: auto;
+}
+.capped-width-v-narrow {
+  max-width: 800px;
+  margin: auto;
+}
 
 /* Re-usable Utiity Classes  */
 
@@ -55,37 +64,198 @@ body {
 .tall-90 {
   min-height: 90vh;
 }
+.tall-100 {
+  min-height: 100vh;
+}
 
+/* Padding Utility Classes */
+.padded-sm {
+  padding: 2.5%;
+}
 .padded {
   padding: 5%;
 }
-.padded-side {
-  padding: 2rem 10%; /* Adjusting the left and right padding */
+.padded-lg {
+  padding: 10%;
 }
 
-.padded-1,
-.grid.padded-1 {
+
+.padded-05 {
+  padding: 0.5rem;
+}
+.padded-1 {
   padding: 1rem;
 }
-.padded-2,
-.grid.padded-2 {
+.padded-2 {
   padding: 2rem;
 }
+.padded-3 {
+  padding: 3rem;
+}
 
+.padded-t {
+  padding-top: 5%;
+}
+.padded-b {
+  padding-bottom: 5%;
+}
+.padded-l {
+  padding-left: 5%;
+}
+.padded-r {
+  padding-right: 5%;
+}
+
+.padded-tb {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.padded-lr {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.padded-t-1 {
+  padding-top: 1rem;
+}
+.padded-b-1 {
+  padding-bottom: 1rem;
+}
+.padded-l-1 {
+  padding-left: 1rem;
+}
+.padded-r-1 {
+  padding-right: 1rem;
+}
+
+.padded-t-2 {
+  padding-top: 2rem;
+}
+.padded-b-2 {
+  padding-bottom: 2rem;
+}
+.padded-l-2 {
+  padding-left: 2rem;
+}
+.padded-r-2 {
+  padding-right: 2rem;
+}
+
+.padded-t-0 {
+  padding-top: 0;
+}
+.padded-b-0 {
+  padding-bottom: 0;
+}
+.padded-l-0 {
+  padding-left: 0;
+}
+.padded-r-0 {
+  padding-right: 0;
+}
+
+/* Margin Utility Classes */
+
+.margin-t {
+  margin-top: 5%;
+}
+.margin-b {
+  margin-bottom: 5%;
+}
+.margin-l {
+  margin-left: 5%;
+}
+.margin-r {
+  margin-right: 5%;
+}
+
+.margin-t-1 {
+  margin-top: 1rem;
+}
+.margin-b-1 {
+  margin-bottom: 1rem;
+}
+.margin-l-1 {
+  margin-left: 1rem;
+}
+.margin-r-1 {
+  margin-right: 1rem;
+}
+
+.margin-t-2 {
+  margin-top: 2rem;
+}
+.margin-b-2 {
+  margin-bottom: 2rem;
+}
+.margin-l-2 {
+  margin-left: 2rem;
+}
+.margin-r-2 {
+  margin-right: 2rem;
+}
+
+.margin-b-3 {
+  margin-bottom: 3rem;
+}
+
+.margin-t-0 {
+  margin-top: 0;
+}
 .margin-b-0 {
   margin-bottom: 0;
 }
+.margin-l-0 {
+  margin-left: 0;
+}
+.margin-r-0 {
+  margin-right: 0;
+}
 
+.margin-tb {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.margin-lr {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/*  utility classes background */
+.full-width {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+}
+.capped-width-wide {
+  max-width: 1800px;
+  margin: auto;
+}
+
+.capped-width {
+  max-width: 1000px;
+  margin: auto;
+}
+.capped-width-narrow {
+  max-width: 900px;
+  margin: auto;
+}
+
+/*  Background colors */
 .bg-light {
-  background-color: #f5f1ed;
+  background-color: var(--bg-beige_color);
+}
+.bg-dark {
+  background-color: var(--bg-dark_color);
+}
+.light-text {
+  color: var(--light-text_color);
 }
 
-.light-text {
-  color: #f5f1ed;
-}
-.dark-text {
-  color: #1d1918;
-}
+.dark-text { color: var(--dark-text_color);}
 
 .left {
   text-align: left;
@@ -104,7 +274,7 @@ body {
 /* Your other CSS styles here */
 body {
   font-family: "Baskerville", serif;
-  color: rgb(65, 60, 60);
+  color: var(--dark-text_color);
 }
 
 
@@ -171,45 +341,40 @@ li {
   font-weight: bold;
 }
 
-.text-lato {
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  color: #e37165;
-}
 
 /* Button for white background (default state) */
 .button {
   color: inherit;
-  border: 1px solid #1d1918;
+  border: 1px solid var(--bg-dark_color);
   border-radius: 2rem;
   text-decoration: none;
   padding: 0.5rem 1.5rem;
   display: inline-block;
-  background-color: white; /* White background */
-  color: #1d1918; /* Black text */
+  background-color: var(bg-light_color); /* White background */
+  color: var(--dark-text_color); /* Black text */
 }
 
 /* Button on hover (beige background with black text) */
 .button:hover {
-  background-color: #F5F1ED; /* Beige background */
-  color: #1d1918; /* Black text */
+  background-color: var(--bg-beige_color); /* Beige background */
+  color: var(--dark-text_color) /* Black text */
 }
 
 /* Button for beige background (default state) */
 .button-beige {
-  color: #1d1918; /* Black text */
-  border: 1px solid #1d1918; /* Black border */
+  color: var(--bg-dark_color); /* Black text */
+  border: 1px solid var(--dark-text_color); /* Black border */
   border-radius: 2rem;
   text-decoration: none;
   padding: 0.5rem 1.5rem;
   display: inline-block;
-  background-color: #F5F1ED; /* Beige background */
+  background-color: var(--bg-beige_color); /* Beige background */
 }
 
 /* Button on hover (slightly darker beige background) */
 .button-beige:hover {
-  background-color: #e0d8cc; /* Darker beige */
-  color: #1d1918; /* Black text */
+  background-color: var(--bg-dark_color); /* Darker beige */
+  color: var(--dark-text_color); /* Black text */
 }
 
 
@@ -234,37 +399,40 @@ footer p {
   background-size: cover;
   background-position: center;
   background-color: rgb(90, 90, 90);
-  background-image: url("/images/zen-studio-3.jpg");
+  background-image: url("/images/van.jpeg");
 }
-.bg-studio {
-  background-image: url("/images/zen-studio-3.jpg");
+.bg-van-2{
+  background-image: url("/images/van-2.jpeg");
 }
 .bg-van {
   background-image: url("/images/van.jpeg");
  
 }
-.bg-stone {
-  background-image: url("/images/stone.png");
+.bg-grapes {
+  background-image: url("/images/grapes.jpg");
 }
-.bg-leaves {
-  background-image: url("/images/leaves-light.png");
-}
-
-.bg-yogi {
-  background-image: url("/images/zen-studio-yogi.jpg");
-}
-.bg-map {
-  background-image: url("/images/light-colored-map.png");
-}
-.yogi {
-  border-radius: 15rem;
-  border-bottom-right-radius: 0;
-}
-.shape-window {
-  border-top-left-radius: 20rem;
-  border-top-right-radius: 20rem;
+.bg-wine {
+  background-image: url("/images/wine.jpg");
 }
 
+.bg-prosseco {
+  background-image: url("/images/prosseco.png");
+}
+.bg-cocktails {
+  background-image: url("/images/cocktails.png");
+}
+.bg-logo {
+  background-image: url("/images/logo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100px auto; /* or contain, or cover */
+  width: 100px;
+  height: 100px; /* Keeps the aspect ratio */
+}
+.fa-instagram 
+{
+  font-size: 60px;
+}
 
 /* Gridlex Media Queries 
   @media (max-width: 36em)  Max 576px 	_xs-*
