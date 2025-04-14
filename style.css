@@ -246,16 +246,19 @@ html {
 
 /*  Background colors */
 .bg-light {
-  background-color: var(--bg-beige_color);
+  background-color: var(--bg-light);
 }
 .bg-dark {
-  background-color: var(--bg-dark_color);
+  background-color: var(--bg-dark);
+}
+.bg-beige {
+  background-color: var(--bg-beige);
 }
 .light-text {
-  color: var(--light-text_color);
+  color: var(--light-text);
 }
 
-.dark-text { color: var(--dark-text_color);}
+.dark-text { color: var(--dark-text);}
 
 .left {
   text-align: left;
@@ -274,7 +277,7 @@ html {
 /* Your other CSS styles here */
 body {
   font-family: "Baskerville", serif;
-  color: var(--dark-text_color);
+  color: var(--dark-text);
 }
 
 
@@ -345,36 +348,36 @@ li {
 /* Button for white background (default state) */
 .button {
   color: inherit;
-  border: 1px solid var(--bg-dark_color);
+  border: 1px solid var(--dark-text);
   border-radius: 2rem;
   text-decoration: none;
   padding: 0.5rem 1.5rem;
   display: inline-block;
-  background-color: var(bg-light_color); /* White background */
-  color: var(--dark-text_color); /* Black text */
+  background-color: var(--bg-beige); /* White background */
+  color: var(--dark-text); /* Black text */
 }
 
 /* Button on hover (beige background with black text) */
 .button:hover {
-  background-color: var(--bg-beige_color); /* Beige background */
-  color: var(--dark-text_color) /* Black text */
+  background-color: var(--bg-dark); /* Beige background */
+  color: var(--dark-text) /* Black text */
 }
 
 /* Button for beige background (default state) */
 .button-beige {
-  color: var(--bg-dark_color); /* Black text */
-  border: 1px solid var(--dark-text_color); /* Black border */
+  color: var(--bg-dark); /* Black text */
+  border: 1px solid var(--dark-text); /* Black border */
   border-radius: 2rem;
   text-decoration: none;
   padding: 0.5rem 1.5rem;
   display: inline-block;
-  background-color: var(--bg-beige_color); /* Beige background */
+  background-color: var(--bg-beige); /* Beige background */
 }
 
 /* Button on hover (slightly darker beige background) */
 .button-beige:hover {
-  background-color: var(--bg-dark_color); /* Darker beige */
-  color: var(--dark-text_color); /* Black text */
+  background-color: var(--bg-light); /* Darker beige */
+  color: var(--dark-text); /* Black text */
 }
 
 
@@ -388,7 +391,7 @@ footer {
 footer p {
   font-size: 1rem;
 }
-/* Images & Background Images */£
+/* Images & Background Images */
 
 
 
@@ -433,6 +436,10 @@ footer p {
 {
   font-size: 60px;
 }
+.fa-instagram:hover {
+ color: var(--light-text);
+}
+
 
 /* Gridlex Media Queries 
   @media (max-width: 36em)  Max 576px 	_xs-*
