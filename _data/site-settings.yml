@@ -13,6 +13,6 @@ design:
   dark-text_color: '#1d1918'
   light-text_color: '#f5f1ed'
   featured-text-white_color: '#ffffff'
-  bg-dark_color: '##e0d8cc'
+  bg-dark_color: '#e0d8cc'
   bg-light_color: '#ffffff'
   bg-beige_color: '#f5f1ed'
