@@ -2,12 +2,20 @@
 layout: default
 title: Home
 ---
-
+<!---
 <section class="padded grid bg-image bg-van  tall-80 center">
   <div class="col-12-middle">
     <h1 class="text-xxl light-text">FIZZY AFFAIRS</h1>
   </div>
+</section>-->
+<section class="padded grid bg-image bg-van tall-80 center">
+  <div class="overlay">
+    <div class="col-12-middle">
+      <h1 class="text-xl white-text">FIZZY AFFAIRS</h1>
+    </div>
+  </div>
 </section>
+
 
 <!-- Banner Text -->
 <section class="padded grid bg-beige tall-50">
@@ -112,9 +120,9 @@ title: Home
     <p>Once I receive your request, I’ll get back to you with more info!</p>
   </div>
 
-  <div class="contact-wrapper col-12 grid">
-     <!--Left: Form -->
-    <div class="form-container col-6_sm-12 padded">
+  <div class="col-6_sm-12-middle padded">
+     
+    <!--Left: Form -->
       <form class="grid-center padded" action="https://formspree.io/f/xeqnyaag" method="POST">
         <div class="col-6_sm-12-middle">
           <label for="_name">FIRST NAME*</label>
@@ -167,7 +175,7 @@ title: Home
     </div>
   
     <!-- Right: Image -->
-    <div class="image-container col-6_sm-12 center">
+    <div class="image-container col-6_sm-12-middle center">
       <img src="/images/cocktails.png" alt="Decorative" class="contact-image" />
     </div>
   </div>
@@ -176,29 +184,20 @@ title: Home
 
 
 
-<!-- Footer -->
-<section class="grid-center padded text-featured">
-  <div class="col-12 padded center">
-    <h2 class="text-xl">Find us. <span class="sm-block">Contact us.</span></h2>
+<!---- Footer-->
+<footer class=" grid padded">
+  <div class="col-8_sm-12-middle padded-1"> 
+    <a href="/index">
+        <img src="/images/logo.png"class="logo">
+    </a>
+</div>
+  <nav class="col-4_sm-12-bottom padded">
+      <h4 class="bold">Fizzy Affairs</h4>
+      <p><a href="mailto:info@fizzyaffairs.com">info@fizzyaffairs.com</a></p>
+      <p><a href="tel:180055555">Give us a call </a></p>
+      <p><a href="#">Privacy Policy</a></p>
+  </nav>
+  <div class="col-12 center">
+      <p class="subtle" href="www.mijacrea.com">Copyright MijaCréa</p>
   </div>
-
-  <div class="col-4_md-5_xs-12 padded-2 text-lato">
-    <p class="margin-b-0"><strong>Fizzy Affairs</strong></p>
-    <p>
-      About <br />
-      Where are we?
-    </p>
-    <p><em>Send us a message</em></p>
-    <p class="margin-b-0 text-bold">
-      <a href="mailto:zenstudio@gmail.com">E-mail: fizzy@gmail.com</a>
-    </p>
-    <p class="text-bold"><a href="tel:0062788956">Ph:62568954</a></p>
-  </div>
-
-  <div class="col-6_md-7_xs-12 tall-50">
-    <img src="/images/Logo.png" alt="logo-fizzy-affairs">  </div>
-</section>
-
-<footer>
-  <p class="subtle center">Copyright</p>
 </footer>
