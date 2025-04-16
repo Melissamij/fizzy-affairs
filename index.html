@@ -101,81 +101,153 @@ title: Home
     </nav>
   </div>
 </section>
-
-
-<!------------ Contact Form-------->
+<!-- ------------ Contact Form -------->
 <section class="contact-form grid-center padded bg-light">
-  <div class="padded center">
-      <h2>READY TO CREATE YOUR DREAM WEBSITE?<br />FILL UP THE FORM AND LET'S MAKE A PLAN TOGETHER</h2>
-      <p>Once I received your demand, I will send you a link so we can book a call.</p>
+  <div class="padded center col-12">
+    <h2>READY TO BOOK YOUR EVENT?<br />FILL UP THE FORM AND LET'S GET STARTED</h2>
+    <p>Once I receive your request, I’ll get back to you with more info!</p>
   </div>
-  <div class="col-6_sm-12-middle padded">
 
+  <div class="contact-wrapper col-12 grid">
+    <!-- Left: Form -->
+    <div class="form-container col-6_sm-12 padded">
       <form class="grid-center padded" action="https://formspree.io/f/xeqnyaag" method="POST">
-
-          <div class="col-6_sm-12-middle">
-              <label for="_name">FIRST NAME*</label>
-              <input type="text" name="_name" id="_name" required />
-          </div>
-          <div class="col-6_sm-12-middle">
-              <label for="_last-name">LAST NAME*</label>
-              <input type="text" name="_lastname" id="_last-name" required />
-          </div>
-          <div class="col-12-middle">
-              <label>E-MAIL*</label>
-              <input type="email" name="_replyto" id="_replyto" required />
-          </div>
-          <div class="col-12-middle">
-              <label for="_website">WEBSITE ( If applicable)</label>
-              <input type="text" name="_website" id="_website" />
-          </div>
-          <div class="col-12-middle">
-              <label for="_instagram">INSTAGRAM HANDLE</label>
-              <input type="text" name="_instagram" id="_instagram" />
-          </div>
-          <div class="col-12-middle">
-              <label for="_business">WHAT DOES YOUR BUSINESS DO?</label>
-              <input type="text" name="_business" id="_business" />
-          </div>
-          <div class="col-12-middle">
-              <label for="message">EXPLAIN ME WHAT YOU ARE LOOKING FOR*.</label>
-              <textarea type="message" id="message"></textarea>
-          </div>
-          <div class="col-12-middle">
-              <label for="message">WHY DO YOU THINK I WILL BE A GOOD FIT FOR YOU?</label>
-              <textarea type="message" id="message"></textarea>
-          </div>
-          <div class="col-12-middle">
-              <label for="date">WHAT DATE WOULD YOU LIKE TO LAUNCH BY?</label>
-              <input type="date" />
-          </div>
-          
-          <div class="col-12-middle">
-              <label>WHAT SERVICES ARE YOU LOOKING FOR?</label><br />
-              <input class="checkboxes" type="checkbox" id="singlepage" name="singlepage" value="singlepage" />
-              <label for="singlepage">SINGLE PAGE SITE </label><br />
-              
-              <input class="checkboxes" type="checkbox" id="windowwebsite" name="windowwebsite" value="windowwebsite" />
-              <label for="windowwebsite">WEBSITE ( 5pages)</label><br />
-
-              <input class="checkboxes" type="checkbox" id="ecommerce" name="ecommerce" value="ecommerce" />
-              <label for="ecommerce">E-COMMERCE (SHOPIFY) WEBSITE </label><br />
-
-              <input class="checkboxes" type="checkbox" id="custom" name="custom" value="custom" />
-              <label for="custom">CUSTOM WEBSITE</label><br />
-
-              <input class="checkboxes" type="checkbox" id="design" name="design" value="design" />
-              <label for="design">DESIGN / BRANDING</label><br />
-
-              <input class="checkboxes" type="checkbox" id="social" name="design" value="social" />
-              <label for="social">SOCIAL MEDIA</label><br />
-          </div>
-          <div class="col-12">
-          <button type="submit" class="button">SUBMIT</button>
-          </div>
+        <div class="col-6_sm-12-middle">
+          <label for="_name">FIRST NAME*</label>
+          <input type="text" name="_name" id="_name" required />
+        </div>
+        <div class="col-6_sm-12-middle">
+          <label for="_last-name">LAST NAME*</label>
+          <input type="text" name="_lastname" id="_last-name" required />
+        </div>
+        <div class="col-12-middle">
+          <label for="_replyto">E-MAIL*</label>
+          <input type="email" name="_replyto" id="_replyto" required />
+        </div>
+        <div class="col-12-middle">
+          <label for="event_date">EVENT DATE*</label>
+          <input type="date" name="event_date" id="event_date" required />
+        </div>
+        <div class="col-12-middle">
+          <label for="event_type">EVENT TYPE*</label>
+          <select name="event_type" id="event_type" required>
+            <option value="">Select...</option>
+            <option value="Wedding">Wedding</option>
+            <option value="Birthday">Birthday</option>
+            <option value="Party">Party</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="col-12-middle">
+          <label for="adults">APPROX. NUMBER OF ADULTS*</label>
+          <input type="number" name="adults" id="adults" min="1" required />
+        </div>
+        <div class="col-12-middle">
+          <label for="service">SERVICE OF INTEREST*</label>
+          <select name="service" id="service" required>
+            <option value="">Select...</option>
+            <option value="The Classic">The Classic</option>
+            <option value="The Elegant">The Elegant</option>
+            <option value="The Sparkling">The Sparkling</option>
+          </select>
+        </div>
+        <div class="col-12-middle">
+          <label for="message">MESSAGE</label>
+          <textarea name="message" id="message" rows="5"></textarea>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="button">SEND</button>
+        </div>
       </form>
+    </div>
+
+    <!-- Right: Image -->
+    <div class="image-container col-6_sm-12 center">
+      <img src="/images/cocktails.png" alt="Decorative" class="contact-image" />
+    </div>
   </div>
 </section>
+
+<!-- ------------ Contact Form -------->
+<section class="contact-form grid-center padded bg-beige">
+  <div class="padded center col-12">
+    <h2>READY TO CREATE YOUR DREAM WEBSITE?<br />FILL UP THE FORM AND LET'S MAKE A PLAN TOGETHER</h2>
+    <p>Once I received your demand, I will send you a link so we can book a call.</p>
+  </div>
+
+  <div class="contact-wrapper col-12 grid">
+    <!-- Left: Form -->
+    <div class="form-container col-6_sm-12 padded">
+      <form class="grid-center padded" action="https://formspree.io/f/xeqnyaag" method="POST">
+        <div class="col-6_sm-12-middle">
+          <label for="_name">FIRST NAME*</label>
+          <input type="text" name="_name" id="_name" required />
+        </div>
+        <div class="col-6_sm-12-middle">
+          <label for="_last-name">LAST NAME*</label>
+          <input type="text" name="_lastname" id="_last-name" required />
+        </div>
+        <div class="col-12-middle">
+          <label>E-MAIL*</label>
+          <input type="email" name="_replyto" id="_replyto" required />
+        </div>
+        <div class="col-12-middle">
+          <label for="_website">WEBSITE (If applicable)</label>
+          <input type="text" name="_website" id="_website" />
+        </div>
+        <div class="col-12-middle">
+          <label for="_instagram">INSTAGRAM HANDLE</label>
+          <input type="text" name="_instagram" id="_instagram" />
+        </div>
+        <div class="col-12-middle">
+          <label for="_business">WHAT DOES YOUR BUSINESS DO?</label>
+          <input type="text" name="_business" id="_business" />
+        </div>
+        <div class="col-12-middle">
+          <label for="message">EXPLAIN ME WHAT YOU ARE LOOKING FOR*.</label>
+          <textarea name="project_details" id="message" required></textarea>
+        </div>
+        <div class="col-12-middle">
+          <label for="why">WHY DO YOU THINK I WILL BE A GOOD FIT FOR YOU?</label>
+          <textarea name="why_me" id="why"></textarea>
+        </div>
+        <div class="col-12-middle">
+          <label for="date">WHAT DATE WOULD YOU LIKE TO LAUNCH BY?</label>
+          <input type="date" name="launch_date" id="date" />
+        </div>
+        <div class="col-12-middle">
+          <label>WHAT SERVICES ARE YOU LOOKING FOR?</label><br />
+          <input class="checkboxes" type="checkbox" id="singlepage" name="singlepage" value="singlepage" />
+          <label for="singlepage">SINGLE PAGE SITE </label><br />
+
+          <input class="checkboxes" type="checkbox" id="windowwebsite" name="windowwebsite" value="windowwebsite" />
+          <label for="windowwebsite">WEBSITE (5 pages)</label><br />
+
+          <input class="checkboxes" type="checkbox" id="ecommerce" name="ecommerce" value="ecommerce" />
+          <label for="ecommerce">E-COMMERCE (SHOPIFY) WEBSITE </label><br />
+
+          <input class="checkboxes" type="checkbox" id="custom" name="custom" value="custom" />
+          <label for="custom">CUSTOM WEBSITE</label><br />
+
+          <input class="checkboxes" type="checkbox" id="design" name="design" value="design" />
+          <label for="design">DESIGN / BRANDING</label><br />
+
+          <input class="checkboxes" type="checkbox" id="social" name="social" value="social" />
+          <label for="social">SOCIAL MEDIA</label><br />
+        </div>
+        <div class="col-12">
+          <button type="submit" class="button">SUBMIT</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Right: Image -->
+    <div class="image-container col-6_sm-12 center">
+      <img src="images/cocktails.png" alt="Cocktails" class="contact-image" />
+    </div>
+  </div>
+</section>
+
 
 
 <!-- Footer -->

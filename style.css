@@ -441,126 +441,127 @@ footer p {
  color: var(--light-text);
 }
 
-/*-------------- form style */
-form [class*="col-"] {
-  width: 50%;
-  flex-direction: column;
+/****** Layout for form and image ******/
+/*.contact-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-input {
-  border-style: solid;
+
+/* Contact image style 
+.contact-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Rounded input and textarea borders 
+input,
+textarea {
   border: 1px solid var(--dark-text);
+  border-radius: 8px;
   padding: 0.8em;
-  display: block;
   width: 100%;
   font-size: 1rem;
-  vertical-align:top;
 }
 
-/* checkboxes style */
-input[type="checkbox"] {
-  position: inherit;
-}
-
-.checkboxes {
-  width: 15px;
-  height: 15px;
-}
-input[type="checkbox"]:checked + label::after {
-  content: "";
-  position: absolute;
-  width: 1.2ex;
-  height: 0.4ex;
-  background: rgba(0, 0, 0, 0);
-
-  top: 0.9ex;
-  left: 0.4ex;
-  border: 3px solid #767964;
-  border-top: none;
-  border-right: none;
-
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-
-input[type="checkbox"] {
-  line-height: 2.1ex;
-}
-
-input[type="radio"],
-input[type="checkbox"] {
-  position: absolute;
-  left: -999em;
-}
-
-input[type="checkbox"] + label {
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-input[type="checkbox"] + label::before {
-  content: "";
-  display: inline-block;
-  vertical-align: -25%;
-  height: 2ex;
-  width: 2ex;
-  background-color: white;
-  border: 0.5px solid #767964;
-  border-radius: 4px;
-  margin-right: 0.5em;
-}
-input[type="submit"] {
-  width: auto;
-  display: block;
-}
-
-label,
-.checkboxes {
-  display: inline-block;
-  padding-bottom: 2%;
-}
-
+/* Focus style 
 input:focus,
 textarea:focus {
   outline: none;
   border: 2px solid #767964;
-  /* featured color */
 }
-
-textarea {
-  min-height: 7em;
-  width: 100%;
-  border: none;
-}
-
-.email-signup input {
-  width: 30%;
-  display: inline-block;
-  max-width: 250px;
-  margin-top: 1rem;
-}
-
-.email-signup .button-solid {
-  padding: 0.8em;
-  border-radius: 0;
-  font-size: 1rem;
-}
-form .button {
-  width: 100%;
-  background-color: #767964;
-}
+*/
+/* Responsive stacking 
 @media (max-width: 768px) {
-  .email-signup input {
-    width: 100%;
-    max-width: 100%;
+  .contact-wrapper {
+    flex-direction: column;
+  }
+  .image-container {
+    margin-top: 2rem;
   }
 }
-.gallery [class*="col-"] {
-  padding: 1%;
+*/
+/* Layout for form and image */
+.contact-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
+
+/* Contact image style */
+.contact-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Rounded input, textarea, and select borders */
+input,
+textarea,
+select {
+  border: 1px solid var(--dark-text);
+  border-radius: 8px;
+  padding: 0.8em;
+  width: 100%;
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: #fff;
+}
+
+/* Focus state */
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border: 2px solid #767964;
+}
+
+/* Style labels */
+label {
+  display: block;
+  margin-bottom: 0.3em;
+  font-weight: 600;
+  color: var(--dark-text);
+}
+
+/* Responsive stacking */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
+  .image-container {
+    margin-top: 2rem;
+  }
+}
+/* dropdown */
+select {
+  appearance: none; /* removes default browser style */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-color: var(--bg-beige); /* same as contact form */
+  border: 1px solid var(--dark-text);
+  border-radius: 8px;
+  padding: 0.8em;
+  width: 100%;
+  font-size: 1rem;
+  color: var(--dark-text);
+  background-image: none; /* uses default arrow */
+}
+
+select:focus {
+  outline: none;
+  border: 2px solid #767964;
+}
+
+
+
+
 /* Gridlex Media Queries 
   @media (max-width: 36em)  Max 576px 	_xs-*
   @media (max-width: 48em)  Max 768px 	_sm-*
