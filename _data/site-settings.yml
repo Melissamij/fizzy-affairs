@@ -16,12 +16,4 @@ design:
   bg-dark_color: '#493628'
   bg-light_color: '#ffffff'
   bg-beige_color: '#f5f1ed'
-image_ratios:
-  - label: Landscape (65%)
-    value: landscape
-  - label: Portrait (125%)
-    value: portrait
-  - label: Portrait Tall (175%)
-    value: portrait-tall
-  - label: Square (100%)
-    value: square
+

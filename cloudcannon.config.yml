@@ -3,10 +3,27 @@ collections_config:
     path: _data
     name: Data
     icon: data_usage
+
+# This will expose your HTML files for editing
+files:
+  - path: index.html
+    label: Home Page
+  - path: about.html
+    label: About
+  - path: contact.html
+    label: Contact
+
+# If you have multiple HTML files in a folder like `pages/`, use glob patterns
+# files:
+#   - path: pages/*.html
+#     label: Pages
+
 paths:
   static: static
   uploads: static/uploads
+
 timezone: Europe/Paris
+
 markdown:
   engine: commonmark
   options:
@@ -22,6 +39,7 @@ markdown:
     attributes: false
     typographer: false
     treat_indentation_as_code: true
+
 _snippets_imports:
   hugo:
     exclude:
