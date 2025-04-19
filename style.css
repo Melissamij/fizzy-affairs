@@ -476,6 +476,19 @@ footer p {
 }
 /* Images & Background Images */
 
+.landscape {
+  padding-bottom: 65%;
+}
+.portrait {
+  padding-bottom: 125%;
+}
+.portrait-tall {
+  padding-bottom: 175%;
+}
+.square {
+  padding-bottom: 100%;
+}
+
 .img {
   max-width: 100%;
 }
@@ -671,6 +684,7 @@ footer a:hover {
     max-width: 100%;
     height: auto;
   }
+  
 }
 
 /* ------- SM Media Query (48em / 768px) --------------- */
@@ -785,6 +799,9 @@ footer a:hover {
       height: auto;
       display: block;
       padding-left: 10rem;
+    }
+    .tall-80 {
+      min-height: 50vh;
     }
   
 }

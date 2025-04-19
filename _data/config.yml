@@ -1,0 +1,15 @@
+_fields:
+  image:
+    type: object
+    label: Image
+    fields:
+      src:
+        type: image
+        label: Image File
+      alt:
+        type: text
+        label: Alt Text
+      ratio:
+        type: select
+        label: Aspect Ratio
+        options: _data/_site-settings.yml:image_ratios
