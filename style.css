@@ -571,14 +571,28 @@ form [class*="col-"] {
 input,
 textarea,
 select {
+  font-size: 16px;
+  min-height: 44px;
   border: 1px solid var(--dark-text);
   border-radius: 8px;
   padding: 0.8em;
   width: 100%;
-  font-size: 1rem;
   font-family: inherit;
   background-color: var(--bg-beige);
 }
+
+/* Custom select styling to remove iOS blue */
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%23333' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 0.8em center;
+  background-size: 1em;
+  padding-right: 2.5em;
+}
+
 
 /* Focus state */
 input:focus,
