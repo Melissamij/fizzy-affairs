@@ -657,7 +657,20 @@ footer a:hover {
   .hide-md {
     display: none;
   }
- 
+  .contact-wrapper {
+    flex-direction: column;
+  }
+
+  .image-container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-image {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 /* ------- SM Media Query (48em / 768px) --------------- */
