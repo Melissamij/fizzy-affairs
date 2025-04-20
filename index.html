@@ -2,31 +2,6 @@
 layout: default
 title: Home
 editable: true
-packages_title: "Packages"
-packages_intro: "All our packages are customizable! If you have any question / needs, please send us a message."
-
-packages_cta: "Contact Us"
-
-packages:
-  - title: "The Classic Affair"
-    image: "/images/cocktails.png"
-    features:
-      - "1 Premium Bio Prosecco keg = 50 guests"
-      - "2h of service"
-      - "25km from Antibes included"
-
-  - title: "The Elegant Affair"
-    image: "/images/cocktails.png"
-    features:
-      - "An additional keg of Premium Prosecco = 100 guests"
-      - "Aperol Spritz and/or St Germain Spritz cocktails"
-
-  - title: "The Sparkling Affair"
-    image: "/images/cocktails.png"
-    features:
-      - "A third Premium Prosecco keg = 150 guests"
-      - "Premium cocktail selection: Aperol, St Germain, Belini, Mimosa or a custom signature drink"
-      - "Extended service time"
 ---
 
 <section class="padded grid bg-image bg-van tall-80 center">
@@ -51,7 +26,7 @@ packages:
 </section>
 
 
-<!-- Services Section -
+<!-- Services Section -->
 <section class="grid padded " id="services">
   <div class="col-12 padded center editable">
     <h3 class="uppercase">Packages</h3>
@@ -98,27 +73,8 @@ packages:
   <div class="col-12 center padded">
     <a href="#contact" class="button uppercase padded-1 editable">Contact Us</a>
   </div>
-</section>-->
-<!-- Services Section -->
-<section class="grid padded" id="services">
-  <div class="col-12 padded center editable">
-    <h3 class="uppercase">{{ page.packages_title }}</h3>
-    <p>{{ page.packages_intro }}</p>
-  </div>
+</section>
 
-  {% for package in page.packages %}
-    <div class="col-4_sm-12 padded-1 capped-width-wide">
-      <img src="{{ package.image }}" data-editable />
-      <div class="grid padded">
-        <h3 class="col-12 center">{{ package.title }}</h3>
-        <ul>
-          {% for item in package.features %}
-            <li>{{ item }}</li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
-  {% endfor %}
 
   <div class="col-12 center padded">
     <a href="#contact" class="button uppercase padded-1 editable">{{ page.packages_cta }}</a>
