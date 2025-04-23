@@ -559,10 +559,12 @@ section.bg-image {
   height: 100px; /* Keeps the aspect ratio */
 }
 .logo {
-  max-width: 80px; /* Adjust this value as needed */
+  max-width: 130px; /* Adjust this value as needed */
   height: auto;
 }
-
+.bg-elena {
+  background-image: url("/images/elena.png");
+}
 .fa-instagram 
 {
   font-size: 60px;
