@@ -595,8 +595,8 @@ section.bg-image {
  color: var(--light-text);
 }
 
-/* Image container */
-.image-container {
+/* New Image container for packages */
+.package-image-container {
   width: 100%;       /* Set the width to 100% of the column */
   height: 400px;     /* Set a fixed height for the container (you can adjust this value) */
   overflow: hidden;  /* Hide any overflowed content */
@@ -605,11 +605,12 @@ section.bg-image {
   align-items: center;      /* Center the image vertically */
 }
 
-.image-container img {
+.package-image-container img {
   width: 100%;       /* Make the image responsive (fill the width of the container) */
   height: 100%;      /* Ensure the image covers the full height of the container */
   object-fit: cover; /* Ensure the image is cropped to fit without distortion */
 }
+
 
 
 
