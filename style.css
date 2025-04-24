@@ -582,6 +582,11 @@ section.bg-image {
 .bg-elena {
   background-image: url("/images/profile-web.png");
 }
+
+.bg-champagne {
+  background-image: url("/images/champagne.jpg");
+}
+
 .fa-instagram, .fa-facebook
 {
   font-size: 60px;
@@ -590,6 +595,21 @@ section.bg-image {
  color: var(--light-text);
 }
 
+/* Image container */
+.image-container {
+  width: 100%;       /* Set the width to 100% of the column */
+  height: 400px;     /* Set a fixed height for the container (you can adjust this value) */
+  overflow: hidden;  /* Hide any overflowed content */
+  display: flex;
+  justify-content: center;  /* Center the image horizontally */
+  align-items: center;      /* Center the image vertically */
+}
+
+.image-container img {
+  width: 100%;       /* Make the image responsive (fill the width of the container) */
+  height: 100%;      /* Ensure the image covers the full height of the container */
+  object-fit: cover; /* Ensure the image is cropped to fit without distortion */
+}
 
 
 
