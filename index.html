@@ -2,19 +2,23 @@
 layout: default
 title: Home
 editable: true
+banner:
+  - featured_image: /images/van.jpeg
 ---
+{% include header-nav.html %}
 
-<section class="padded grid bg-image bg-van tall-80 center">
-  <div class="overlay">
-    <div class="col-12-middle">
-      <h1 class="text-xl white-text">FIZZY AFFAIRS</h1>
-    </div>
+{% for item in page.banner %}
+<section class="banner grid center tall-80 bg-image " style="background-image: url('{{ item.featured_image }}')">
+  <div class="col-12-middle center overlay">
+    <h1 class="text-xxl white-text">FIZZY AFFAIRS</h1>
   </div>
 </section>
+{% endfor %}
+
 
 
 <!-- Banner Text -->
-<section class="padded grid bg-beige">
+<section class="padded grid">
   <div class="col-12 center padded-side">
     <h3 class="uppercase">Make your event better with us!</h3>
   
@@ -23,7 +27,7 @@ editable: true
 
 
 <!-- Services Section -->
-<section class="grid padded " >
+<section class="grid padded bg-beige" >
   <div class="col-12 padded center editable">
     <h3 class="uppercase editable">Packages</h3>
     <p class="editable">
@@ -35,7 +39,7 @@ editable: true
     <img src="/images/cocktails.png" />
     <div class="grid padded">
       <h3 class="col-12 center editable">The Classic Affair</h3>
-      <ul class="editable">
+      <ul class="editable centered-list">
         <li>1 Premium Bio Prosecco keg = 50 guests</li>
           <li>2h of service</li>
           <li>25km from Antibes included</li>
@@ -47,7 +51,7 @@ editable: true
     <img src="/images/cocktails.png" />
     <div class="grid padded">
       <h3 class="col-12 center editable">The Elegant Affair</h3>
-      <ul class="editable center">
+      <ul class="editable centered-list">
         <li>An additional keg of Premium Prosecco = 100 guests</li>
           <li>Aperol Spritz and/or St Germain Spritz cocktails</li>
       </ul>
@@ -58,7 +62,7 @@ editable: true
     <img src="/images/cocktails.png" />
     <div class="grid padded">
       <h3 class="col-12 center editable">The Sparkling Affair</h3>
-    <ul class="editable">
+    <ul class="editable centered-list">
       <li>A third Premium Prosecco keg = 150 guests
         <li>Premium cocktail selection: Aperol, St Germain, Belini, Mimosa or a custom signature drink</li>
         <li>Extended service time</li>
@@ -67,7 +71,7 @@ editable: true
   </div>
 
   <div class="col-12 center padded">
-    <a href="#contact" class="button uppercase padded-1 editable">Contact Us</a>
+    <a href="#contact" class="button-beige uppercase padded-1 editable">Contact Us</a>
   </div>
 </section>
 
@@ -75,7 +79,7 @@ editable: true
 
 
 <!-- About Section -->
-<section class="grid bg-beige" id="about">
+<section class="grid" id="about">
   <div class="col-6_sm-12 padded">
     <h2 class="editable padded-1">About us</h2>
     <p class="editable padded-1">Hi, I’m Elena — the founder of Fizzy Affairs and the heart behind the bubbles! With over 13 years of experience in luxury yachting hospitality, I’ve learned just how powerful attention to detail can be — and how truly special it is to bring joy to life’s most meaningful moments. Creating unforgettable experiences has always been my passion, and Fizzy Affairs is a celebration of that.</p> 
@@ -86,11 +90,11 @@ editable: true
   <div class="col-6_sm-12 bg-image bg-elena tall-80 bg-padded"></div>
 </section>
 
-<section class="grid column-reverse bg-beige">
+<section class="grid column-reverse">
   <div class="col-6_sm-12 bg-image bg-grapes  tall-80 bg-padded"></div>
   <div class="col-6_sm-12 padded">
     <h2 class="editable padded-1">Our Wine</h2>
-    <p class="editable padded-1">I'm proud to serve Prosecco that comes from a winery nestled in the low plains between Italy’s Veneto and Friuli regions — an area steeped in winemaking history. The winery has been family-run since 1925, and it’s still in the hands of his descendants today.</p>
+    <p class="editable padded-1">I'm proud to serve Prosecco that comes from a winery nestled in the low plains between Italy’s Veneto and Friuli regions — an area steeped in winemaking history. The winery has been family-run since 1925, and it’s still in the hands of it's descendants today.</p>
     <p class="editable padded-1">What really sets this Prosecco apart for me is the philosophy behind it: a balance of tradition and innovation, all with deep respect for the environment. The winery is powered entirely by solar energy, and everything is done with sustainability in mind — from the vineyard to the bottle..</p>
     <p class="editable padded-1">Every glass reflects the care, passion, and authenticity that go into making it. I chose this Prosecco because I believe in what it represents: quality crafted at nature’s pace.
     </p>

@@ -327,6 +327,16 @@ a {
 ul {
   line-height: 2rem;
 }
+ul.centered-list {
+  list-style-position: inside;
+  text-align: center;
+  padding-left: 0;
+}
+
+ul.centered-list li {
+  display: list-item;
+}
+
 li {
   padding-left: 0.5rem;
 }
@@ -387,8 +397,18 @@ li {
 
 /* ------------------------------------header ----------------*/
 header {
-  background-color: var(--bg-light);
   padding: 1% 5%;
+}
+.header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.white-text {
+  color: var(--light-text_color, #fff);
 }
 
 header a {
@@ -563,15 +583,16 @@ section.bg-image {
   height: auto;
 }
 .bg-elena {
-  background-image: url("/images/elena.png");
+  background-image: url("/images/profile-web.png");
 }
-.fa-instagram 
+.fa-instagram, .fa-facebook
 {
   font-size: 60px;
 }
-.fa-instagram:hover {
+.fa-instagram:hover, .fa-facebook:hover {
  color: var(--light-text);
 }
+
 
 
 
