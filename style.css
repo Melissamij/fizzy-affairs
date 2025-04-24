@@ -450,7 +450,6 @@ header a:hover {
   padding: 10%;
   position: fixed;
   top: 0;
- 
   left: 0;
   right: 0;
   text-align: left;
@@ -468,23 +467,21 @@ header a:hover {
   color: var(--bg-dark);
 }
 
+/* Hamburger Button - Right Aligned */
 .hamburger-button {
   cursor: pointer;
-  color: var(--bg-dark);
-  /*display: inline-block;*/
-  position: relative;
+  color: var(--featured-text-white);
+  position: absolute;
   right: 1rem;
   top: 1.5rem;
   z-index: 2;
-}
-.hamburger-button.active {
-  color: var(--bg-dark);
 }
 
 .hamburger-button i {
   font-size: 2.2rem;
   margin-bottom: 0;
 }
+
 
 /* Footer */
 footer {
@@ -840,8 +837,12 @@ footer a:hover {
   .hide-xs {
     display: none;
   }
+  .text-xxl {
+    font-size: 10vw;
+  }
   h1 {
     line-height: 1.1;
+
   }
   .horizontal-scroll {
     overflow-x: auto;
