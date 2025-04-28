@@ -28,7 +28,7 @@ img {
 html {
   scroll-behavior: smooth;
 }
-* ---------- Negative Space Utility Classes  ------------------ */
+/* ---------- Negative Space Utility Classes  ------------------ */
 
 .capped-width-wide {
   max-width: 1600px;
@@ -326,9 +326,7 @@ a {
 
 ul {
   line-height: 2rem;
-  list-style-type: none; /* Removes the default bullets */
 }
-
 ul.centered-list {
   list-style-position: inside;
   text-align: center;
@@ -719,7 +717,6 @@ footer a:hover {
 
   .image-container {
     margin-top: 2rem;
-    display: flex;
     justify-content: center;
   }
 
