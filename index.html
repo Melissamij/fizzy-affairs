@@ -50,16 +50,14 @@ packages:
   <div class="col-12 padded center">
     <h3 class="uppercase editable">Packages</h3>
     <p class="editable">
-      All our packages are customizable and included withing 25km from Antibes! If you have any question / needs, please send us a message. 
+      All our packages are customizable and included within 25km from Antibes! If you have any questions/needs, please send us a message. 
     </p>
   </div>
   
   {% for package in page.packages %}
-  <div class="col-4_sm-12 padded-1 capped-width-wide" id="services">
-    <!-- New Image container with different class name -->
-    <div class="package-image-container">
-      <img src="{{ package.image }}" alt="{{ package.title }}" />
-    </div>
+  <div class="col-4_sm-12 padded-1" id="services">
+    <div class="bg-image portrait" style="background-image: url('{{ package.image }}');"></div>
+    
     <div class="grid padded">
       <h3 class="col-12 center editable">{{ package.title }}</h3>
       <ul class="editable centered-list">
@@ -69,12 +67,14 @@ packages:
       </ul>
     </div>
   </div>
+  
   {% endfor %}
-
+  
   <div class="col-12 center padded">
     <a href="#contact" class="button-beige uppercase padded-1 editable">Contact Us</a>
   </div>
 </section>
+
 
 
 

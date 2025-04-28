@@ -243,7 +243,21 @@ html {
   max-width: 900px;
   margin: auto;
 }
-
+.landscape {
+  padding-bottom: 65%;
+}
+.portrait {
+  padding-bottom: 125%;
+}
+.portrait-tall {
+  padding-bottom: 175%;
+}
+.square {
+  padding-bottom: 100%;
+}
+.landscape-wide {
+  padding-bottom: 56%;
+}
 /*  Background colors */
 .bg-light {
   background-color: var(--bg-light);
@@ -483,7 +497,7 @@ header a:hover {
 }
 
 
-/* Footer */
+/*-------------------------Footer */
 footer {
   color: var(--dark-text);
   font-weight: 300;
@@ -491,14 +505,13 @@ footer {
 footer p {
   font-size: 1rem;
 }
-/* Images & Background Images */
+
+/* ------------------------Images & Background Images */
 
 .landscape {
   padding-bottom: 65%;
 }
-.portrait {
-  padding-bottom: 125%;
-}
+
 .portrait-tall {
   padding-bottom: 175%;
 }
@@ -509,19 +522,22 @@ footer p {
 .img {
   max-width: 100%;
 }
+
 .bg-image {
+  display: block;
+  width: 100%;
   background-size: cover;
   background-position: center;
-  background-color: var(--bg-beige);
-  background-image: url("/images/van.jpeg");
+  background-repeat: no-repeat;
 }
 
-/* test for dark overlay */
-.bg-image {
-  position: relative;
-  background-size: cover;
-  background-position: center;
+.portrait {
+  padding-bottom: 125%;
+  position: relative; /* important! */
+  overflow: hidden;   /* important! */
 }
+
+
 
 .overlay {
   background-color: rgba(0, 0, 0, 0.4); /* Dark overlay */
@@ -595,21 +611,6 @@ section.bg-image {
  color: var(--light-text);
 }
 
-/* New Image container for packages */
-.package-image-container {
-  width: 100%;       /* Set the width to 100% of the column */
-  height: 400px;     /* Set a fixed height for the container (you can adjust this value) */
-  overflow: hidden;  /* Hide any overflowed content */
-  display: flex;
-  justify-content: center;  /* Center the image horizontally */
-  align-items: center;      /* Center the image vertically */
-}
-
-.package-image-container img {
-  width: 100%;       /* Make the image responsive (fill the width of the container) */
-  height: 100%;      /* Ensure the image covers the full height of the container */
-  object-fit: cover; /* Ensure the image is cropped to fit without distortion */
-}
 
 
 
