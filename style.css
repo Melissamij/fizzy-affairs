@@ -634,6 +634,7 @@ select {
   width: 100%;
   font-family: inherit;
   background-color: var(--bg-beige);
+  color: var(--dark-text);
 }
 
 /* Custom select styling to remove iOS blue */
@@ -641,13 +642,26 @@ select {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-image: url("data:image/svg+xml;utf8,<svg fill='%23333' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-color: var(--bg-beige);
+  color: var(--dark-text);
+  border: 1px solid var(--dark-text);
+  border-radius: 8px;
+  padding: 0.8em;
+  width: 100%;
+  font-family: inherit;
+  font-size: 16px;
+  min-height: 44px;
+
+  /* Custom dropdown arrow */
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%23422520' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
   background-repeat: no-repeat;
   background-position: right 0.8em center;
   background-size: 1em;
   padding-right: 2.5em;
-}
 
+  /* Remove tap highlight */
+  -webkit-tap-highlight-color: transparent;
+}
 
 /* Focus state */
 input:focus,
@@ -655,6 +669,7 @@ textarea:focus,
 select:focus {
   outline: none;
   border: 1px solid var(--bg-dark);
+  box-shadow: none;
 }
 
 /* Style labels */
@@ -674,6 +689,7 @@ label {
     margin-top: 2rem;
   }
 }
+
 
 /******* Footer ****/ 
 footer a {
