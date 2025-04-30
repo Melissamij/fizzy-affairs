@@ -1,0 +1,30 @@
+title: "Fizzy Affairs"
+description: "Prosecco van for events & weddings"
+baseurl: "" # leave empty unless using a subfolder
+url: "" # add final domain later, e.g. https://fizzyaffairs.com
+
+# Enable editing in CloudCannon
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+    _editable: true
+
+# CloudCannon editable settings
+_uploads_dir: "uploads"
+_data_dir: "_data"
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+
+# Markdown processor
+markdown: kramdown
+
+# Optional - default layout for pages
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
