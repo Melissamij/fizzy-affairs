@@ -60,7 +60,9 @@ packages:
     <div class="bg-image portrait" style="background-image: url('{{ package.image }}');"></div>
     
     <div class="grid padded">
-      <h3 class="col-12 center editable">{{ package.title }}</h3>
+      <h3 class="col-12 center editable">
+        {{ package.title }}
+      </h3>
       <ul class="editable centered-list">
         {% for item in package.features %}
           <li>{{ item }}</li>
