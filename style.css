@@ -342,15 +342,22 @@ ul {
   line-height: 2rem;
 }
 ul.centered-list {
-  list-style-position: inside;
-  text-align: center;
-  padding-left: 0;
+  list-style: none;         /* remove bullets */
+  padding-left: 0;          /* no indent */
+  margin: 0 auto;           /* center block */
+  text-align: center;       /* center text */
 }
 
 ul.centered-list li {
-  display: list-item;
+  margin: 0.5rem 0;         /* vertical spacing */
+  padding: 0;               /* remove extra left padding */
 }
 
+ul.centered-list li::before {
+  content: "•";
+  display: inline-block;
+  margin-right: 0.5rem;
+}
 li {
   padding-left: 0.5rem;
 }
