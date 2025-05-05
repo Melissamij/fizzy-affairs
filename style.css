@@ -619,6 +619,35 @@ section.bg-image {
 }
 
 
+/* slide banner*/
+
+.custom-slider {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  width: 300%;
+  height: 100%;
+  animation: slideShow 15s infinite;
+}
+
+.slider-item {
+  flex: 0 0 100%;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+@keyframes slideShow {
+  0% { transform: translateX(0); }
+  33% { transform: translateX(-100%); }
+  66% { transform: translateX(-200%); }
+  100% { transform: translateX(0); }
+}
 
 
 

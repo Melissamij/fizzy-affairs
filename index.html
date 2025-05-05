@@ -4,7 +4,7 @@ title: Home
 editable: true
 banner:
   - featured_image: >-
-      /uploads/auberge-tao-biot-divine-french-riviera-ph-otographe-mariage-cote-d-azur-0379-dz.jpg
+      /images/photo-7.png
 packages:
   - title: The Classic Affair
     image: /images/champagne.jpg
@@ -25,6 +25,10 @@ packages:
         Premium cocktail selection: Aperol, St Germain, Belini, Mimosa or a
         custom signature drink
       - Extended service time
+slider:
+    - image: /images/slide1.jpg
+    - image: /images/slide2.jpg
+    - image: /images/slide3.jpg
 ---
 {% include header-nav.html %}
 
@@ -49,7 +53,7 @@ packages:
 </section>
 
 
-<!-- Services Section -->
+<!-- PAckages Section -->
 <section class="grid padded bg-beige">
   <div class="col-12 padded center">
     <h3 class="uppercase editable">Packages</h3>
@@ -78,6 +82,15 @@ packages:
   
   <div class="col-12 center padded">
     <a href="#contact" class="button-beige uppercase padded-1 editable">Contact Us</a>
+  </div>
+</section>
+
+<!-- Banner Slider Section -->
+<section class="custom-slider">
+  <div class="slider-track">
+    {% for item in page.slider %}
+      <div class="slider-item" style="background-image: url('{{ item.image }}');"></div>
+    {% endfor %}
   </div>
 </section>
 
