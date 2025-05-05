@@ -62,3 +62,51 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+// slide banner 
+document.addEventListener("DOMContentLoaded", () => {
+  const slides = document.querySelectorAll(".slide");
+  const prevBtn = document.getElementById("prevSlide");
+  const nextBtn = document.getElementById("nextSlide");
+  let current = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle("active", i === index);
+    });
+  }
+
+  if (prevBtn && nextBtn && slides.length > 0) {
+    prevBtn.addEventListener("click", () => {
+      current = (current - 1 + slides.length) % slides.length;
+      showSlide(current);
+    });
+
+    nextBtn.addEventListener("click", () => {
+      current = (current + 1) % slides.length;
+      showSlide(current);
+    });
+
+    // Optional swipe support
+    let startX = 0;
+    const slider = document.querySelector(".manual-slider");
+    if (slider) {
+      slider.addEventListener("touchstart", (e) => {
+        startX = e.touches[0].clientX;
+      });
+
+      slider.addEventListener("touchend", (e) => {
+        const endX = e.changedTouches[0].clientX;
+        if (startX - endX > 50) {
+          current = (current + 1) % slides.length;
+          showSlide(current);
+        } else if (endX - startX > 50) {
+          current = (current - 1 + slides.length) % slides.length;
+          showSlide(current);
+        }
+      });
+    }
+
+    // Initial display
+    showSlide(current);
+  }
+});

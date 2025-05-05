@@ -84,14 +84,23 @@ slider:
   </div>
 </section>
 
-<!-- Banner Slider Section -->
-<section class="custom-slider">
-  <div class="slider-track">
+
+<!---- banner section -
+<section class="manual-slider">
+  <div class="slider-wrapper">
     {% for item in page.slider %}
-      <div class="slider-item" style="background-image: url('{{ item.image }}');"></div>
+      <div class="slide{% if forloop.first %} active{% endif %}">
+        <img src="{{ item.image }}" alt="Slider Image">
+      </div>
     {% endfor %}
   </div>
+  <div class="slider-controls">
+    <button id="prevSlide">&#10094;</button>
+    <button id="nextSlide">&#10095;</button>
+  </div>
 </section>
+-->
+
 
 
 
