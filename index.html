@@ -10,7 +10,6 @@ packages:
     features:
       - 1 Premium Bio Prosecco keg = 50 guests
       - 2h of service
-      - 25km from Antibes included
   - title: The Elegant Affair
     image: /images/prosseco.png
     features:
@@ -90,15 +89,15 @@ slider:
   <div class="slider-wrapper">
     {% for item in page.slider %}
       <div class="slide{% if forloop.first %} active{% endif %}">
-        <img src="{{ item.image }}" alt="Slider Image">
+        <img src="{{ item.image }}" alt="Slider Image" />
       </div>
     {% endfor %}
-  </div>
+  
   <div class="slider-controls">
     <button id="prevSlide">&#10094;</button>
     <button id="nextSlide">&#10095;</button>
   </div>
-</section>
+
 -->
 
 
