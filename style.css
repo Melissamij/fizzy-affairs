@@ -838,6 +838,9 @@ footer a:hover {
     max-width: 100%;
     height: auto;
   }
+  .gallery-fixed-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
   
 }
 
@@ -956,6 +959,9 @@ footer a:hover {
     }
     .tall-80 {
       min-height: 50vh;
+    }
+    .gallery-fixed-grid {
+      grid-template-columns: 1fr;
     }
   
 }
