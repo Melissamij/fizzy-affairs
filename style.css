@@ -615,7 +615,7 @@ section.bg-image {
   font-size: 40px;
 }
 .fa-instagram:hover, .fa-facebook:hover {
- color: var(--light-text);
+ color: var(--bg-dark);
 }
 
 
@@ -695,6 +695,19 @@ label {
   .image-container {
     margin-top: 2rem;
   }
+}
+/* thank you message */
+
+.hidden {
+  display: none;
+}
+
+.form-success {
+  text-align: center;
+  margin-top: 1rem;
+  color: var(--bg-dark); /* You can change this to match your brand (e.g., #422520) */
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 

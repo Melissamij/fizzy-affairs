@@ -120,79 +120,77 @@ packages:
 
 
 <!-- ------------ Contact Form -------->
- 
 <section class="contact-form grid-center padded bg-beige" id="contact">
   <div class="padded center col-12-middle">
     <h3 class="editable">READY TO BOOK YOUR EVENT?<br />Let's chat</h3>
-    <p class="editable">Enquire with us to see how  Fizzy Affair can help celebrate your event. We’ll be back to you in 24h max. </p>
+    <p class="editable">Enquire with us to see how Fizzy Affair can help celebrate your event. We’ll be back to you in 24h max.</p>
     <p class="editable">
       You can also contact us at:&nbsp;<a href="mailto:info@fizzyaffairs.com">info@fizzyaffairs.com</a>
     </p>
   </div>
 
-  <!---- div form ---->
+  <!-- Form column -->
   <div class="col-6_sm-12-middle padded">
-     
-    <!--Left: Form -->
-      <form class="grid" action="https://formsubmit.co/info@fizzyaffairs.com
-      " method="POST">
-        <div class="col-6_sm-12-middle">
-          <label for="_name">FIRST NAME*</label>
-          <input type="text" name="_name" id="_name" required />
-        </div>
-        <div class="col-6_sm-12-middle">
-          <label for="_last-name">LAST NAME*</label>
-          <input type="text" name="_lastname" id="_last-name" required />
-        </div>
-        <div class="col-12-middle">
-          <label for="_replyto">E-MAIL*</label>
-          <input type="email" name="_replyto" id="_replyto" required />
-        </div>
-        <div class="col-12-middle">
-          <label for="event_date">EVENT DATE*</label>
-          <input type="date" name="event_date" id="event_date" required />
-        </div>
-       
-       <div class="col-12-middle">
-          <label for="event_type">EVENT TYPE*</label>
-          <select name="event_type" id="event_type" required>
-            <option value="">Select...</option>
-            <option value="Wedding">Wedding</option>
-            <option value="Birthday">Birthday</option>
-            <option value="Party">Party</option>
-            <option value="Other">Other</option>
-          </select>
-        </div>
-        <div class="col-12-middle">
-          <label for="adults">APPROX. NUMBER OF ADULTS*</label>
-          <input type="number" name="adults" id="adults" min="1" required />
-        </div>
-        <div class="col-12-middle">
-          <label for="service">PACKAGES OF INTEREST*</label>
-          <select name="service" id="service" required>
-            <option value="">Select...</option>
-            <option value="The Classic">The Classic</option>
-            <option value="The Elegant">The Elegant</option>
-            <option value="The Sparkling">The Sparkling</option>
-          </select>
-        </div>
-        <div class="col-12-middle">
-          <label for="message">MESSAGE</label>
-          <textarea name="message" id="message" rows="5"></textarea>
-        </div>
-        <div class="col-12">
-          <button type="submit" class="button-beige">SEND</button>
-        </div>
-      </form>
-    </div>
-  
-    <!-- Right: Image -->
-    <div class="image-container col-6_sm-12-middle center hide-sm">
-      <img src="/images/cocktails.png" alt="Decorative" class="contact-image" />
-    </div>
-  
-</section>
+    <form id="contact-form" class="grid" action="https://formspree.io/f/mgvkkaky" method="POST">
+      <div class="col-6_sm-12-middle">
+        <label for="_name">FIRST NAME*</label>
+        <input type="text" name="_name" id="_name" required />
+      </div>
+      <div class="col-6_sm-12-middle">
+        <label for="_last-name">LAST NAME*</label>
+        <input type="text" name="_lastname" id="_last-name" required />
+      </div>
+      <div class="col-12-middle">
+        <label for="_replyto">E-MAIL*</label>
+        <input type="email" name="_replyto" id="_replyto" required />
+      </div>
+      <div class="col-12-middle">
+        <label for="event_date">EVENT DATE*</label>
+        <input type="date" name="event_date" id="event_date" required />
+      </div>
+      <div class="col-12-middle">
+        <label for="event_type">EVENT TYPE*</label>
+        <select name="event_type" id="event_type" required>
+          <option value="">Select...</option>
+          <option value="Wedding">Wedding</option>
+          <option value="Birthday">Birthday</option>
+          <option value="Party">Party</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <div class="col-12-middle">
+        <label for="adults">APPROX. NUMBER OF ADULTS*</label>
+        <input type="number" name="adults" id="adults" min="1" required />
+      </div>
+      <div class="col-12-middle">
+        <label for="service">PACKAGES OF INTEREST*</label>
+        <select name="service" id="service" required>
+          <option value="">Select...</option>
+          <option value="The Classic">The Classic</option>
+          <option value="The Elegant">The Elegant</option>
+          <option value="The Sparkling">The Sparkling</option>
+        </select>
+      </div>
+      <div class="col-12-middle">
+        <label for="message">MESSAGE</label>
+        <textarea name="message" id="message" rows="5"></textarea>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="button-beige">SEND</button>
+      </div>
+    </form>
 
+    <!-- Thank you message -->
+    <p id="form-success" class="form-success hidden">
+      🎉 Thank you! We'll be in touch within 24 hours.
+    </p>
+  </div>
+
+  <!-- Image column -->
+  <div class="image-container col-6_sm-12-middle center hide-sm">
+    <img src="/images/cocktails.png" alt="Decorative" class="contact-image" />
+  </div>
+</section>
 
 
 
