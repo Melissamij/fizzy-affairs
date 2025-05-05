@@ -1,8 +1,20 @@
 seo:
   site_name: Fizzy Affairs
   title: Prosseco Van
-  description: 
-  keywords:
+  description: >-
+    Celebrate in style with Fizzy Affairs – a mobile bar service based in
+    Antibes offering organic Prosecco, craft cocktails, and customizable
+    packages for weddings, private parties, and events. Let us bring the sparkle
+    to your special day!
+  keywords: >-
+    Mobile bar service Antibes, Organic Prosecco service, Customizable event
+    packages, Wedding mobile bar, Private party bar service, Corporate event
+    mobile bar, Cocktail catering French Riviera, Antibes event services,
+    Champagne bar Antibes, French Riviera event catering, Premium Prosecco for
+    events, Prosecco and cocktail service, Antibes wedding bar hire, Event drink
+    catering Antibes, Antibes mobile Prosecco bar, Luxury bar service Antibes,
+    Wedding cocktail bar French Riviera, Sparkling wine catering, Antibes event
+    planning, Private celebration drinks service.
   social_image:
   favicon_image:
 social:
@@ -16,4 +28,3 @@ design:
   bg-dark_color: '#493628'
   bg-light_color: '#ffffff'
   bg-beige_color: '#f5f1ed'
-
