@@ -1,29 +1,63 @@
-<!---- Footer-->
-<footer class=" grid padded-05 ">
-  <div class="col-4_sm-12-middle  center padded-1"> 
+<footer class="grid padded-05">
+  <div class="col-4_sm-12-middle center-sm padded-1">
     <a href="/index">
-        <img src="/images/logo.png" class="logo">
-    </a>
-</div>
-  <nav class="col-4_sm-12 padded">
-      <h4 class="bold">Fizzy Affairs</h4>
-      <p><a href="mailto:info@fizzyaffairs.com">info@fizzyaffairs.com</a></p>
-      <p><a href="/privacy.html">Privacy Policy</a></p>
-      <p class="editable">We are located in Antibes</p>
-      <p>Siret Number: 93476104000013</p>
-  </nav>
-  <div class="col-4_sm-12 padded center">
-    <h4 class="bold editable">Follow Us</h4>
-    <!-- Instagram -->
-    <a href="https://www.instagram.com/fizzyaffairs?igsh=MnpzM2UzdmcwdDJs">
-      <i class="fab fa-instagram padded-05"></i>
-    </a>
-    <!-- Facebook -->
-    <a href="https://www.facebook.com/share/15oG4YqQ5u/?mibextid=wwXIfr">
-      <i class="fab fa-facebook padded-05"></i>
+      <img src="/images/logo.png" class="logo" alt="Fizzy Affairs logo">
     </a>
   </div>
+
+  <nav class="col-4_sm-12 padded">
+    <h4 class="bold">Fizzy Affairs</h4>
+    <p><a href="mailto:info@fizzyaffairs.com">info@fizzyaffairs.com</a></p>
+    <p>
+      <a href="{% if page.lang == 'fr' %}/confidentialite/{% else %}/privacy/{% endif %}">
+        {% if page.lang == 'fr' %}Politique de confidentialité{% else %}Privacy Policy{% endif %}
+      </a>
+    </p>
+    <p class="editable">
+      {% if page.lang == "fr" %}
+        Nous sommes situés à Antibes
+      {% else %}
+        We are located in Antibes
+      {% endif %}
+    </p>
+    <p>Siret Number: 93476104000013</p>
+  </nav>
+
+  <div class="col-4_sm-12 padded social-lang-container">
+    <h4 class="bold editable">
+      {% if page.lang == "fr" %}
+        Suivez-nous
+      {% else %}
+        Follow Us
+      {% endif %}
+    </h4>
+    <!-- Social Icons -->
+    <div class="social-icons">
+      <a href="https://www.instagram.com/fizzyaffairs?igsh=MnpzM2UzdmcwdDJs" aria-label="Instagram">
+        <i class="fab fa-instagram padded-05"></i>
+      </a>
+      <a href="https://www.facebook.com/share/15oG4YqQ5u/?mibextid=wwXIfr" aria-label="Facebook">
+        <i class="fab fa-facebook padded-05"></i>
+      </a>
+    </div>
+
+    <!-- Language switcher -->
+    <div class="language-switcher social-icons">
+      {% if page.lang == "fr" %}
+        <a href="/" title="English version" aria-label="Switch to English">
+          🇬🇧 EN
+        </a>
+      {% else %}
+        <a href="/accueil/" title="Version française" aria-label="Passer en français">
+          🇫🇷 FR
+        </a>
+      {% endif %}
+    </div>
+  </div>
+
   <div class="col-12 center">
-      <p class="subtle"></p> <a href="https://mijacrea.com/">Copyright MijaCréa</a></p>
+    <p class="subtle">
+      <a href="https://mijacrea.com/">Copyright MijaCréa</a>
+    </p>
   </div>
 </footer>

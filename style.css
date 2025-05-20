@@ -512,7 +512,10 @@ footer {
 footer p {
   font-size: 1rem;
 }
+.language-switcher {
+  padding: 2%;
 
+}
 /* ------------------------Images & Background Images */
 
 .landscape {

@@ -1,0 +1,185 @@
+---
+layout: default
+title: Accueil
+lang: fr
+editable: true
+permalink: /accueil/
+banner:
+  - featured_image: /images/photo-3.jpg
+packages:
+  - title: L’Affaire Classique
+    image: /images/champagne.jpg
+    features:
+      - "1 fût de Prosecco Bio Premium = 50 invités"
+      - "2 heures de service"
+  - title: L’Affaire Élégante
+    image: /images/prosseco.png
+    features:
+      - "Un fût supplémentaire de Prosecco Premium = 100 invités"
+      - "Cocktails Aperol Spritz et/ou St Germain Spritz"
+  - title: L’Affaire Étincelante
+    image: /images/cocktails.png
+    features:
+      - "Un troisième fût de Prosecco Premium = 150 invités"
+      - "Sélection de cocktails Premium : Aperol, St Germain, Bellini, Mimosa ou cocktail signature personnalisé"
+      - "Service prolongé"
+slider:
+  - image: /images/photo-8.jpg
+  - image: /images/photo-4.jpg
+  - image: /images/photo.jpg
+---
+
+
+{% include header-nav.html %}
+
+{% for item in page.banner %}
+<section class="banner grid center tall-80 bg-image " style="background-image: url('{{ item.featured_image }}')">
+  <div class="col-12-middle center overlay">
+    <h1 class="text-xxl white-text editable">FIZZY AFFAIRS</h1>
+  </div>
+</section>
+{% endfor %}
+
+<!-- Texte de la bannière -->
+<section class="padded grid">
+  <div class="col-12 center padded-side">
+    <h3 class="uppercase editable">
+      Rendez votre événement inoubliable avec nous !
+    </h3>
+  </div>
+</section>
+
+<!-- Section Packages -->
+<section class="grid padded bg-beige">
+  <div class="col-12 padded center">
+    <h3 class="uppercase editable">Nos forfaits</h3>
+    <p class="editable">
+      Tous nos forfaits sont personnalisables, 25 km inclus depuis Antibes ! Si vous avez des questions ou besoins particuliers, n’hésitez pas à nous contacter.
+    </p>
+  </div>
+
+  {% for package in page.packages %}
+  <div class="col-4_sm-12 padded-1" id="services">
+    <div class="bg-image portrait" style="background-image: url('{{ package.image }}');"></div>
+
+    <div class="grid padded">
+      <h3 class="col-12 center editable">
+        {{ package.title }}
+      </h3>
+      <ul class="editable centered-list">
+        {% for item in package.features %}
+          <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  {% endfor %}
+
+  <div class="col-12 center padded">
+    <a href="#contact" class="button-beige uppercase padded-1 editable">Contactez-nous</a>
+  </div>
+</section>
+
+<!-- Section À propos -->
+<section class="grid" id="about">
+  <div class="col-6_sm-12 padded">
+    <h2 class="editable padded-1">À propos de nous</h2>
+    <p class="editable padded-1">Bonjour, je suis Elena — la fondatrice de Fizzy Affairs et le cœur derrière les bulles ! Avec plus de 13 ans d’expérience dans l’hôtellerie de luxe sur yachts, j’ai appris à quel point l’attention aux détails est précieuse — et combien il est spécial de rendre les moments les plus importants inoubliables. Créer des expériences uniques a toujours été ma passion, et Fizzy Affairs en est la célébration.</p>
+    <p class="editable padded-1">Installée maintenant dans la magnifique ville d’Antibes, j’ouvre un nouveau chapitre, apprenant le français et m’intégrant avec plaisir dans cette charmante communauté que je considère désormais comme mon chez-moi.</p>
+    <p class="editable padded-1">Ce que j’aime le plus chez Fizzy Affairs, c’est de participer aux plus beaux jours des gens — mariages, anniversaires, et fêtes remplies d’amour, de rires et d’éclats de bulles. Rien n’est plus gratifiant que de voir la joie dans les yeux d’une personne qui lève son verre à un moment qu’elle n’oubliera jamais.</p>
+    <p class="editable padded-1">J’ai hâte d’apporter des bulles à votre journée spéciale !</p>
+  </div>
+  <div class="col-6_sm-12 bg-image bg-elena tall-80 bg-padded"></div>
+</section>
+
+<section class="grid column-reverse">
+  <div class="col-6_sm-12 bg-image bg-grapes tall-80 bg-padded"></div>
+  <div class="col-6_sm-12 padded">
+    <h2 class="editable padded-1">Notre Vin</h2>
+    <p class="editable padded-1">Je suis fière de servir un Prosecco provenant d’un domaine situé dans les plaines basses entre les régions de Veneto et Frioul en Italie — une zone riche en histoire viticole. Le domaine est une entreprise familiale depuis 1925 et reste aujourd’hui entre les mains de ses descendants.</p>
+    <p class="editable padded-1">Ce qui distingue vraiment ce Prosecco, c’est la philosophie qui l’accompagne : un équilibre entre tradition et innovation, toujours dans le plus grand respect de l’environnement. Le domaine est entièrement alimenté par l’énergie solaire, et tout est fait dans une démarche durable — de la vigne à la bouteille.</p>
+    <p class="editable padded-1">Chaque verre reflète le soin, la passion et l’authenticité qui entrent dans sa fabrication. J’ai choisi ce Prosecco parce que je crois en ce qu’il représente : une qualité élaborée au rythme de la nature.</p>
+  </div>
+</section>
+
+<!-- Section Contact -->
+<section class="contact-form grid-center padded bg-beige" id="contact">
+  <div class="padded center col-12-middle">
+    <h3 class="editable">PRÊT À RÉSERVER VOTRE ÉVÉNEMENT ?<br />Discutons-en</h3>
+    <p class="editable">Contactez-nous pour découvrir comment Fizzy Affairs peut sublimer votre événement. Nous vous répondrons sous 24h maximum.</p>
+    <p class="editable">
+      Vous pouvez également nous écrire à :&nbsp;<a href="mailto:info@fizzyaffairs.com">info@fizzyaffairs.com</a>
+    </p>
+  </div>
+
+  <!-- Formulaire -->
+  <div class="col-6_sm-12-middle padded">
+    <form id="contact-form" class="grid" action="https://formspree.io/f/mgvkkaky" method="POST">
+      <div class="col-6_sm-12-middle">
+        <label for="_name">PRÉNOM*</label>
+        <input type="text" name="_name" id="_name" required />
+      </div>
+      <div class="col-6_sm-12-middle">
+        <label for="_last-name">NOM*</label>
+        <input type="text" name="_lastname" id="_last-name" required />
+      </div>
+      <div class="col-12-middle">
+        <label for="_replyto">E-MAIL*</label>
+        <input type="email" name="_replyto" id="_replyto" required />
+      </div>
+      <div class="col-12-middle">
+        <label for="event_date">DATE DE L’ÉVÉNEMENT*</label>
+        <input type="date" name="event_date" id="event_date" required />
+      </div>
+      <div class="col-12-middle">
+        <label for="event_type">TYPE D’ÉVÉNEMENT*</label>
+        <select name="event_type" id="event_type" required>
+          <option value="">Sélectionnez...</option>
+          <option value="Mariage">Mariage</option>
+          <option value="Anniversaire">Anniversaire</option>
+          <option value="Fête">Fête</option>
+          <option value="Autre">Autre</option>
+        </select>
+      </div>
+      <div class="col-12-middle">
+        <label for="adults">NOMBRE APPROXIMATIF D’ADULTES*</label>
+        <input type="number" name="adults" id="adults" min="1" required />
+      </div>
+      <div class="col-12-middle">
+        <label for="service">FORFAIT SOUHAITÉ*</label>
+        <select name="service" id="service" required>
+          <option value="">Sélectionnez...</option>
+          <option value="L’Affaire Classique">L’Affaire Classique</option>
+          <option value="L’Affaire Élégante">L’Affaire Élégante</option>
+          <option value="L’Affaire Étincelante">L’Affaire Étincelante</option>
+        </select>
+      </div>
+      <div class="col-12-middle">
+        <label for="message">MESSAGE</label>
+        <textarea name="message" id="message" rows="5"></textarea>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="button-beige">ENVOYER</button>
+      </div>
+    </form>
+
+    <!-- Message de confirmation -->
+    <p id="form-success" class="form-success hidden">
+      🎉 Merci ! Nous reviendrons vers vous sous 24 heures.
+    </p>
+  </div>
+
+  <!-- Colonne image -->
+  <div class="image-container col-6_sm-12-middle center hide-sm">
+    <img src="/images/cocktails.png" alt="Décoratif" class="contact-image" />
+  </div>
+</section>
+
+<!-- Galerie d’images -->
+<section class="image-gallery">
+  <div class="gallery-fixed-grid">
+    <img src="/images/photo-1.jpg" alt="Événement" />
+    <img src="/images/photo-2.jpg" alt="Van Prosecco" />
+    <img src="/images/photo-5.jpg" alt="Boissons" />
+  </div>
+</section>
