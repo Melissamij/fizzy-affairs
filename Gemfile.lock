@@ -12,9 +12,13 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
-    ffi (1.17.2)
+    ffi (1.17.2-x86_64-darwin)
+    ffi (1.17.2-x86_64-linux-gnu)
     forwardable-extended (2.6.0)
-    google-protobuf (4.31.0)
+    google-protobuf (4.31.0-x86_64-darwin)
+      bigdecimal
+      rake (>= 13)
+    google-protobuf (4.31.0-x86_64-linux-gnu)
       bigdecimal
       rake (>= 13)
     http_parser.rb (0.8.0)
@@ -72,6 +76,7 @@ GEM
     webrick (1.9.1)
 
 PLATFORMS
+  x86_64-darwin-21
   x86_64-linux
 
 DEPENDENCIES
@@ -79,6 +84,9 @@ DEPENDENCIES
   csv
   jekyll
   webrick (~> 1.7)
+
+RUBY VERSION
+   ruby 3.1.7p261
 
 BUNDLED WITH
    2.3.16
