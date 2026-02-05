@@ -1,13 +1,22 @@
 <!-- Fizzy-style header to overlay on banner -->
 <header class="grid center header-overlay">
-    <nav class="col-12 right hide-sm">
+  <nav class="col-12 right hide-sm">
+    {% if page.lang == "fr" %}
+      <a href="/accueil/" class="white-text">ACCUEIL</a>
+      <a href="/accueil/#services" class="white-text">FORMULES</a>
+      <a href="/accueil/#about" class="white-text">À PROPOS</a>
+      <a href="/accueil/#contact" class="white-text">CONTACT</a>
+      <a href="/" class="white-text">🇬🇧 EN</a>
+    {% else %}
       <a href="/index.html" class="white-text">HOME</a>
       <a href="/#services" class="white-text">PACKAGES</a>
       <a href="/#about" class="white-text">ABOUT</a>
       <a href="/#contact" class="white-text">CONTACT</a>
-    </nav>
-  
-    <!-- Mobile Nav Button -->
+      <a href="/accueil/" class="white-text">🇫🇷 FR</a>
+    {% endif %}
+  </nav>
+
+  <!-- Mobile Nav Button -->
   <div class="col-12 show-sm right">
     <a class="hamburger-button mob-show white-text">
       <i class="fas fa-bars icon-bars"></i>
@@ -18,8 +27,17 @@
 
 <!-- Mobile Menu -->
 <nav class="mobile-menu bg-light padded">
+  {% if page.lang == "fr" %}
+    <a href="/accueil/" class="bold">ACCUEIL</a>
+    <a href="/accueil/#services" class="bold">FORMULES</a>
+    <a href="/accueil/#about" class="bold">À PROPOS</a>
+    <a href="/accueil/#contact" class="bold">CONTACT</a>
+    <a href="/" class="bold">🇬🇧 EN</a>
+  {% else %}
     <a href="/index.html" class="bold">HOME</a>
-  <a href="/#services" class="bold">PACKAGES</a>
-  <a href="/#about" class="bold">ABOUT</a>
-  <a href="/#contact" class="bold">CONTACT</a>
+    <a href="/#services" class="bold">PACKAGES</a>
+    <a href="/#about" class="bold">ABOUT</a>
+    <a href="/#contact" class="bold">CONTACT</a>
+    <a href="/accueil/" class="bold">🇫🇷 FR</a>
+  {% endif %}
 </nav>
