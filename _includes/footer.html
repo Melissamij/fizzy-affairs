@@ -56,8 +56,18 @@
   </div>
 
   <div class="col-12 center">
-    <p class="subtle">
-      <a href="https://mijacrea.com/">Copyright MijaCréa</a>
-    </p>
-  </div>
+
+  <p class="subtle">
+    {% if page.lang == "fr" %}
+      L'abus d'alcool est dangereux pour la santé. À consommer avec modération.
+    {% else %}
+      Alcohol abuse is dangerous for your health. Drink responsibly.
+    {% endif %}
+  </p>
+
+  <p class="subtle">
+    <a href="https://mijacrea.com/">Copyright MijaCréa</a>
+  </p>
+
+</div>
 </footer>
